@@ -1,0 +1,50 @@
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .container {
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #333;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>Hola {{username}},</p>
+    <p>Tu disponibilidad ha sido confirmada.</p>
+    <p>Estos son los datos de transferencia:</p>
+    <p>
+      <strong>
+        Monto a transferir: <span style="color: #000;">${{property_price}}</span><br />
+        Nombre del banco: NOMBRE_BANCO<br />
+        CBU: CBU_BANCO<br />
+        ALIAS: ALIAS_BANCO<br />
+        CUIL: CUIL_BANCO
+      </strong>
+    </p>
+    <p>
+      Enviar el comprobante de pago dentro de las primeras 24hs. junto al nombre de la propiedad, la fecha de ingreso y fecha de egreso a nuestro mail: <a href="mailto:NOMBRE_MAIL?subject=Confirmación%20de%20pago">NOMBRE_MAIL</a> con el asunto
+      "Confirmación de pago".
+    </p>
+    <p>Nos estaremos comunicando con vos para enviarte el número de seguimiento el día del despacho.</p>
+    <p>Atentamente,<br />NOMBRE_EMPRESA</p>
+    <hr />
+    <p style="font-size: 12px; color: #777;">Este es un correo automático, por favor no respondas a este mensaje.</p>
+  </div>
+</body>
+</html>

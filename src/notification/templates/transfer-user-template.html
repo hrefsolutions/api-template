@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .container {
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container">
+      <p>Hola {{name}},</p>
+      <p>Gracias por reservar en <strong>NOMBRE_EMPRESA<strong/></p>
+      <p>Propiedad reservada: {{propertyName}}</p>
+      <p>Fecha de ingreso: {{fechaDesde}}</p>
+      <p>Fecha de egreso: {{fechaHasta}}</p>
+      <p>
+        Estamos esperando la confirmación de disponibilidad del departamento, que puede demorar hasta 24hs hábiles. No te
+        preocupes, te vamos a enviar un mensaje cuando esto suceda.
+      </p>
+      <p>
+        Encontranos en Instagram como <a href="https://www.instagram.com/NOMBRE_INSTAGRAM/" target="_blank">@NOMBRE_INSTAGRAM</a>
+      </p>
+      <p>
+        Saludos,<br />NOMBRE_EMPRESA
+      </p>
+      <hr />
+      <p style="font-size: 12px; color: #777;">Este es un correo automático, por favor no respondas a este mensaje.</p>
+    </div>
+</body>
+
+</html>
