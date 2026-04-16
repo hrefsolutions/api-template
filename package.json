@@ -20,14 +20,7 @@
     "start:prod": "node dist/main.js",
     "seed:admin": "ts-node -r tsconfig-paths/register src/seed/seed-admin.ts",
     "lint": "eslint --ext .ts",
-    "lint:fix": "npm run lint -- --fix",
-    "test": "rm -rf coverage && jest --coverage",
-    "test:junit": "jest --coverage --reporters=jest-junit",
-    "test:init": "ts-jest config:init",
-    "git:push": "sh automatic-git.sh",
-    "version:patch": "npm version patch && git push && git push --tags",
-    "version:minor": "npm version minor && git push && git push --tags",
-    "version:major": "npm version major && git push && git push --tags"
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
     "@fastify/static": "^9.0.0",
